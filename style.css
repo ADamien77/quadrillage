@@ -73,9 +73,8 @@ header h1 {
     background-color: #0056b3;
 }
 
-/* Bouton "Choisir un fichier" personnalisé */
 #upload {
-    display: none; /* Masquer l'entrée de fichier */
+    display: none; 
 }
 
 .custom-file-upload {
@@ -94,7 +93,6 @@ header h1 {
     background-color: #0056b3;
 }
 
-/* Section Canvas */
 .canvas-container {
     flex: 2;
     max-width: 600px;
@@ -106,7 +104,6 @@ header h1 {
     height: auto;
 }
 
-/* Responsive pour tablettes et téléphones */
 @media (max-width: 768px) {
     .main-container {
       flex-direction: column;
