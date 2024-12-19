@@ -1,116 +1,129 @@
+/* Applique une police globale à tous les éléments */
 * {
-    font-family: "Shadows Into Light", serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: "Shadows Into Light", serif; /* Utilise une police personnalisée avec une alternative serif */
+    font-weight: 400; /* Définit un poids de police normal */
+    font-style: normal; /* Style de police normal */
 }
 
+/* Style général du corps de la page */
 body {
-    background-color: #f9f9f9;
-    color: #007bff;
-    margin: 0;
-    padding: 0;
+    background-color: #f9f9f9; /* Couleur d'arrière-plan claire */
+    color: #007bff; /* Texte bleu */
+    margin: 0; /* Supprime les marges par défaut */
+    padding: 0; /* Supprime le padding par défaut */
 }
 
+/* Style pour l'en-tête */
 header {
-    background-color: #007bff;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    margin-bottom: 20px;
+    background-color: #007bff; /* Couleur de fond bleue */
+    color: white; /* Texte blanc */
+    padding: 20px 0; /* Ajoute un espacement vertical */
+    text-align: center; /* Centre le texte horizontalement */
+    margin-bottom: 20px; /* Ajoute un espace en bas de l'en-tête */
 }
 
+/* Style pour le titre de l'en-tête */
 header h1 {
-    margin: 0;
-    font-size: 2em;
-    font-weight: bold;
+    margin: 0; /* Supprime les marges */
+    font-size: 2em; /* Taille de texte importante */
+    font-weight: bold; /* Texte en gras */
 }
 
+/* Conteneur principal pour organiser les éléments */
 .main-container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 20px;
-    padding: 20px;
-    flex-wrap: wrap;
+    display: flex; /* Affiche les éléments en ligne */
+    justify-content: center; /* Centre les éléments horizontalement */
+    align-items: flex-start; /* Aligne les éléments en haut */
+    gap: 20px; /* Espacement entre les éléments */
+    padding: 20px; /* Espacement intérieur */
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
 }
 
+/* Style pour la section de contrôle */
 .controls {
-    flex: 1;
-    max-width: 300px;
-    min-width: 200px;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Prend 1 unité d'espace flexible */
+    max-width: 300px; /* Largeur maximale de la section */
+    min-width: 200px; /* Largeur minimale de la section */
+    background-color: #ffffff; /* Fond blanc */
+    padding: 20px; /* Espacement intérieur */
+    border-radius: 10px; /* Bords arrondis */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Ombre subtile */
 }
 
+/* Style pour les étiquettes dans les contrôles */
 .controls label {
-    display: block;
-    margin: 10px 0 5px;
+    display: block; /* Affiche les étiquettes en blocs */
+    margin: 10px 0 5px; /* Espacement au-dessus et en dessous */
 }
 
-.controls input[type="number"], .controls input[type="color"] {
-    width: 100%;
-    padding: 5px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+/* Style pour les champs de saisie */
+.controls input[type="number"], 
+.controls input[type="color"] {
+    width: 100%; /* Prend toute la largeur du conteneur */
+    padding: 5px; /* Espacement intérieur */
+    margin-bottom: 15px; /* Espacement en bas */
+    border: 1px solid #ccc; /* Bordure grise claire */
+    border-radius: 5px; /* Bords légèrement arrondis */
 }
 
+/* Style pour les boutons dans les contrôles */
 .controls button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 25px;
-    font-size: 1em;
-    cursor: pointer;
-    width: 100%;
-    transition: background-color 0.3s ease;
+    background-color: #007bff; /* Fond bleu */
+    color: white; /* Texte blanc */
+    border: none; /* Supprime les bordures */
+    padding: 10px 20px; /* Espacement intérieur */
+    border-radius: 25px; /* Bords très arrondis */
+    font-size: 1em; /* Taille de texte normale */
+    cursor: pointer; /* Curseur en pointeur au survol */
+    width: 100%; /* Bouton prend toute la largeur */
+    transition: background-color 0.3s ease; /* Transition pour un effet au survol */
 }
 
+/* Change la couleur de fond du bouton au survol */
 .controls button:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Bleu plus foncé */
 }
 
+/* Masque l'input de type "file" */
 #upload {
-    display: none; 
+    display: none;
 }
 
+/* Style pour le bouton personnalisé de téléchargement de fichier */
 .custom-file-upload {
-    display: inline-block;
-    padding: 10px 20px;
-    color: white;
-    background-color: #007bff;
-    border-radius: 25px;
-    font-size: 1em;
-    cursor: pointer;
-    text-align: center;
-    transition: background-color 0.3s ease;
+    display: inline-block; /* Affiche comme un bloc en ligne */
+    padding: 10px 20px; /* Espacement intérieur */
+    color: white; /* Texte blanc */
+    background-color: #007bff; /* Fond bleu */
+    border-radius: 25px; /* Bords très arrondis */
+    font-size: 1em; /* Taille de texte normale */
+    cursor: pointer; /* Curseur en pointeur au survol */
+    text-align: center; /* Centre le texte horizontalement */
+    transition: background-color 0.3s ease; /* Transition pour un effet au survol */
 }
 
+/* Change la couleur de fond du bouton personnalisé au survol */
 .custom-file-upload:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Bleu plus foncé */
 }
 
+/* Conteneur pour le canevas */
 .canvas-container {
-    flex: 2;
-    max-width: 600px;
+    flex: 2; /* Prend 2 unités d'espace flexible */
+    max-width: 600px; /* Largeur maximale du canevas */
 }
 
+/* Style pour le canevas */
 #canvas {
-    border: 1px solid #ccc;
-    width: 100%;
-    height: auto;
+    border: 1px solid #ccc; /* Bordure grise claire */
+    width: 100%; /* Largeur prend tout l'espace disponible */
+    height: auto; /* Hauteur ajustée automatiquement */
 }
 
+/* Styles responsifs pour les écrans de moins de 768px */
 @media (max-width: 768px) {
     .main-container {
-      flex-direction: column;
-      align-items: center;
-    }
-
-.controls {
-      max-width: 100%;
+        flex-direction: column; /* Passe les éléments en colonne */
+        align-items: center; /* Centre les éléments horizontalement */
     }
 }
